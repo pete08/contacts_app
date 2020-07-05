@@ -1,9 +1,14 @@
 class Api::ContactsController < ApplicationController
 
-  def display
-    @contact = Contact.first
-    p "its here in the terminal it preints this"
-    render "contact_recall.json.jb" 
-  end
+def index
+  @contacts = Contact.all
+
+  render "index.json.jb"
+end
+
+def show
+  @contact = Contact.find_by(id: params[:id])
+  render "show.json.jb"
+end
 
 end
