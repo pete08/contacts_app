@@ -10,5 +10,7 @@ def show
   @contact = Contact.find_by(id: params[:id])
   render "show.json.jb"
 end
-
+# def create
+# def update
+# def destroy
 end
