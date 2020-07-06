@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 # def index #COMPLETE
 # def show #COMPLETE
-# def create
+# def create #COMPLETE
 # def update
 # def destroy
 
