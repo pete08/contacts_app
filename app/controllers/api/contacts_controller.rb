@@ -27,7 +27,11 @@ def update
   render "show.json.jb"
 end
 
-# def destroy
+def destroy
+  @contact = Contact.find_by(id: params[:id])
+  @contact.destroy
+  render :json => {message: "succuessfully deleted your contact!"}
+end
 
 
 
